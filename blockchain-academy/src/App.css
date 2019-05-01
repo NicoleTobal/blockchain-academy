@@ -1,0 +1,513 @@
+@font-face {
+  font-family: LuloCleanOne;
+  src: url('/fonts/LuloCleanOne.otf');
+}
+
+@font-face {
+  font-family: LuloCleanOneBold;
+  src: url('/fonts/LuloCleanOneBold.otf');
+}
+
+@font-face {
+  font-family: TitilliumWeb-ExtraLight;
+  src: url('/fonts/TitilliumWeb-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: TitilliumWeb-Bold;
+  src: url('/fonts/TitilliumWeb-Bold.ttf');
+}
+
+h5 {
+  font-size: 16px;
+}
+
+.app {
+  text-align: center;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.decoration1 {
+  position: absolute;
+  height: 600px;
+  top: 330px;
+  right: -280px;
+}
+
+.decoration2 {
+  position: absolute;
+  height: 600px;
+  top: 950px;
+  left: -270px;
+}
+
+.decoration3 {
+  position: absolute;
+  height: 600px;
+  top: 1750px;
+  bottom: 10p;
+  right: -300px;
+}
+
+.header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.navbar {
+  background-color: #231f20;
+  padding: 35px;
+}
+
+.logo-container img {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.section-links {
+  text-align: right;
+}
+
+.section-links a {
+  cursor: pointer;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0px 35px 0px 35px;
+}
+
+.section-links a:hover {
+  color: grey;
+}
+
+.line-division {
+  background-image: linear-gradient(to right, #07a480, #5d1160);
+  height: 8px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 52px;
+  letter-spacing: -3px;
+}
+
+.title.first-part {
+  font-family: LuloCleanOne;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: -5px;
+  font-size: 50px;
+}
+
+.title.second-part {
+  font-family: LuloCleanOneBold;
+  margin: 0;
+}
+
+.second-title {
+  font-family: LuloCleanOneBold;
+  text-transform: uppercase;
+  padding: 5px 10px 5px 10px;
+  background-color: #41416a;
+}
+
+.header-button {
+  cursor: pointer;
+  margin-top: 90px;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #5c1360, #09a17f);
+  color: #ffffff;
+  border-color: #ffffff;
+  padding: 10px 50px 10px 50px;
+  border-radius: 40px;
+  border: solid 2px;
+  font-family: LuloCleanOne;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.header-button:hover {
+  background: transparent;
+}
+
+.header .line-division {
+  height: 5px;
+  background: #f5b14c;
+  width: 5%;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.roadmap-section {
+  background-color: #41416a;
+  padding-top: 70px;
+}
+
+.roadmap-header {
+  text-align: center;
+}
+
+.roadmap-header h2 {
+  background-color: white;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto;
+  font-family: LuloCleanOneBold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 35px;
+}
+
+.roadmap-row {
+  display: inline;
+}
+
+.roadmap-row .column {
+  display: table-cell;
+  padding: 100px 50px 100px;
+}
+
+.roadmap-row .column img {
+  display: table;
+}
+
+.roadmap-row .column button {
+  cursor: pointer;
+  margin-top: 90px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-color: #ffffff;
+  padding: 10px 50px 10px 50px;
+  border-radius: 40px;
+  border: solid 2px;
+  font-family: LuloCleanOne;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+  background: transparent;
+}
+
+.roadmap-row .column button:hover {
+  color: grey;
+  border-color: grey;
+}
+
+.event.section {
+  background-color: #bcbec0;
+  display: table;
+}
+
+.event.section .video {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 70px 100px 70px;
+}
+
+.event.section .video img {
+  z-index: 0;
+  position: relative;
+  height: 400px;
+}
+
+.event.section .text {
+  display: table-cell;
+  padding-right: 150px;
+  padding-top: 80px;
+  padding-left: 50px;
+}
+
+.event.section .text h2 {
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto;
+  font-family: LuloCleanOneBold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 35px;
+  text-align: right;
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+
+.event.section .text p {
+  float: right;
+  text-align: right;
+  font-size: 25px;
+  font-family: TitilliumWeb-Bold;
+  line-height: 30px;
+}
+
+.event.section .text button {
+  float: right;
+  cursor: pointer;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-bottom-color: none;
+  border-radius: 40px;
+  border: none;
+  font-family: LuloCleanOneBold;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+  background: #ffffff;
+  color: black;
+  padding: 10px 50px 10px 50px;
+}
+
+.event.section .text button:hover {
+  color: grey;
+}
+
+.event.section .text .line-division {
+  height: 8px;
+  background: #f5b14c;
+  width: 20%;
+  float: right;
+}
+
+.images.section {
+  background-color: #4dbc9c;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.images .row {
+  display: inline;
+  z-index: 0;
+  position: relative;
+}
+
+.images .column {
+  display: table-cell;
+  padding: 10px;
+}
+
+.images img {
+  height: 300px;
+}
+
+.video-title {
+  background-color: #0595739c;
+  position: absolute;
+  bottom: 550px;
+}
+
+.video-title h2 {
+  color: #ffffff;
+  text-transform: UPPERCASE;
+  font-family: LuloCleanOneBold;
+  padding: 0px 100px 0px 100px;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .decoration1 {
+    display: none;
+  }
+  
+  .decoration2 {
+    display: none;
+  }
+  
+  .decoration3 {
+    display: none;
+  }
+
+  .logo-container {
+    text-align: right;
+    padding-right: 30px;
+  }
+
+  .logo-container img {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .navbar {
+    padding: 0px;
+  }
+
+  .section-links a {
+    padding: 0px 10px 0px 10px;
+  }
+
+  .section-links {
+    padding-bottom: 5px;
+    padding-right: 5px;
+  }
+
+  .header .logo {
+    height: 170px;
+  }
+
+  .header-button {
+    margin-top: 50px;
+  }
+
+  .title.first-part {
+    font-size: 40px;
+  }
+
+  .title.second-part {
+    font-size: 40px;
+  }
+
+  .roadmap-row {
+    display: block;
+  }
+
+  .roadmap-row .column {
+    display: block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .roadmap-row .column button{
+    margin-top: 20px;
+  }
+
+  .roadmap-row .column img {
+    margin: 0 auto;
+  }
+
+  .event.section {
+    display: block;
+  }
+
+  .event.section .video {
+    display: block;
+    padding: 40px;
+  }
+
+  .event.section .video img {
+    height: 200px;
+  }
+
+  .event.section .video-title {
+    display: none;
+  }
+
+  .event.section .video-title h2 {
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .event.section .text {
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-left: 20px;
+  }
+
+  .event.section .text h2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .event.section .text p {
+    text-align: center;
+  }
+
+  .event.section .text button {
+    text-align: center;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .images .row {
+    display: block;
+  }
+  
+  .images .column {
+    display: block;
+    padding: 10px;
+  }
+  
+  .images img {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 1494px) {
+
+  .roadmap-row {
+    display: block;
+  }
+
+  .roadmap-row .column {
+    display: block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .roadmap-row .column button{
+    margin-top: 20px;
+  }
+
+  .roadmap-row .column img {
+    margin: 0 auto;
+  }
+
+  .event.section {
+    display: block;
+  }
+
+  .event.section .video {
+    display: block;
+    padding: 40px;
+  }
+
+  .event.section .video img {
+    height: 200px;
+  }
+
+  .event.section .video-title {
+    display: none;
+  }
+
+  .event.section .video-title h2 {
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .event.section .text {
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-left: 20px;
+  }
+
+  .event.section .text h2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .event.section .text p {
+    text-align: center;
+  }
+
+  .event.section .text button {
+    text-align: center;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .images .row {
+    display: block;
+  }
+  
+  .images .column {
+    display: block;
+    padding: 10px;
+  }
+  
+  .images img {
+    height: 200px;
+  }
+}
