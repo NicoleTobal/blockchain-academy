@@ -11,23 +11,26 @@ class App extends Component {
         <img className="decoration3" src="/images/background-decoration2.png" />
         <div className="navbar">
           <div className="logo-container">
-            <img src="/images/logo-navbar.png" height="50px" />
+            <img src="/images/logo-navbar.png" height="40px" />
           </div>
           <div className="section-links">
             <a> Cursos </a>
             <a> Roadmap </a>
             <a> About </a>
             <a> FAQ </a>
+            <img src="/images/menu.png" height="32px" />
           </div>
         </div>
         <div className="line-division" />
         <header className="header">
-          <img className="logo" src="/images/logo-header.png" height="200px" />
-          <h1 className="title first-part"> Blockchain</h1>
-          <h1 className="title second-part"> <b>Academy</b></h1>
-          <h5 className="second-title"> Educando para un futuro descentralizado </h5>
-          <button className="header-button"> Quiero aprender de </button>
-          <div className="line-division" />
+          <div className="overlay">
+            <img className="logo" src="/images/logo-header.png" height="150px" />
+            <h1 className="title first-part"> Blockchain</h1>
+            <h1 className="title second-part"> <b>Academy</b></h1>
+            <h5 className="second-title"> Educando para un futuro descentralizado </h5>
+            <button className="header-button"> Quiero aprender de <img src="/images/search.png" height="15px" /></button>
+            <div className="line-division" />
+          </div>
         </header>
         <div className="roadmap-section">
           <div className="roadmap-header">
@@ -35,22 +38,22 @@ class App extends Component {
           </div>
           <div className="roadmap-row">
             <div className="column">
-              <img src="/images/background.jpeg"/>
+              <img src="/images/events1.png"/>
               <button> Ver más </button>
             </div>
             <div className="column">
-              <img src="/images/background.jpeg" />
+              <img src="/images/events2.png" />
               <button> Ver más </button>
             </div>
             <div className="column">
-              <img src="/images/background.jpeg" />
+              <img src="/images/events1.png" />
               <button> Ver más </button>
             </div>
           </div>
         </div>
         <div className="event section">
           <div className="video">
-            <img src="/images/background.jpeg"/>
+            <img src="/images/events1.png"/>
             <div className="video-title">
               <h2>charla informativa</h2> 
             </div>
@@ -69,13 +72,13 @@ class App extends Component {
         <div className="images section">
           <div className="row">
             <div className="column">
-              <img src="/images/background.jpeg"/>
+              <img src="/images/image1.png"/>
             </div>
             <div className="column">
-              <img src="/images/background.jpeg" />
+              <img src="/images/image2.png" />
             </div>
             <div className="column">
-              <img src="/images/background.jpeg" />
+              <img src="/images/image3.png" />
             </div>
           </div>
         </div>

@@ -19,56 +19,48 @@
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .app {
   text-align: center;
   overflow-x: hidden;
+  overflow-y: hidden;
   position: relative;
 }
 
 .decoration1 {
   position: absolute;
-  height: 600px;
-  top: 330px;
+  height: 550px;
+  top: 260px;
   right: -280px;
+  z-index: 10;
 }
 
 .decoration2 {
   position: absolute;
-  height: 600px;
-  top: 950px;
+  height: 550px;
+  top: 890px;
   left: -270px;
 }
 
 .decoration3 {
   position: absolute;
-  height: 600px;
-  top: 1750px;
+  height: 550px;
+  top: 1850px;
   bottom: 10p;
   right: -300px;
 }
 
-.header {
-  background-color: #282c34;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .navbar {
   background-color: #231f20;
-  padding: 35px;
+  padding: 15px;
 }
 
 .logo-container img {
   position: absolute;
   left: 20px;
-  top: 20px;
+  top: 15px;
 }
 
 .section-links {
@@ -80,6 +72,12 @@ h5 {
   color: #ffffff;
   text-transform: uppercase;
   padding: 0px 35px 0px 35px;
+  font-size: 15px;
+  vertical-align: super;
+}
+
+.section-links img {
+  padding: 0px 20px 0px 10px;
 }
 
 .section-links a:hover {
@@ -93,7 +91,7 @@ h5 {
 
 .title {
   text-transform: uppercase;
-  font-size: 52px;
+  font-size: 40px;
   letter-spacing: -3px;
 }
 
@@ -102,7 +100,7 @@ h5 {
   margin-top: 0;
   margin-bottom: 0;
   letter-spacing: -5px;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .title.second-part {
@@ -115,16 +113,42 @@ h5 {
   text-transform: uppercase;
   padding: 5px 10px 5px 10px;
   background-color: #41416a;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.header {
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+  text-align: center;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.header .overlay {
+  background: black;
+  opacity: 0.95;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
 }
 
 .header-button {
   cursor: pointer;
-  margin-top: 90px;
+  margin-top: 70px;
   text-transform: uppercase;
   background-image: linear-gradient(to right, #5c1360, #09a17f);
   color: #ffffff;
   border-color: #ffffff;
-  padding: 10px 50px 10px 50px;
+  padding: 8px 0px 8px 50px;
   border-radius: 40px;
   border: solid 2px;
   font-family: LuloCleanOne;
@@ -133,14 +157,21 @@ h5 {
   font-size: 12px;
 }
 
+.header-button img {
+  float: right;
+  margin-left: 25px;
+  margin-right: 15px;
+}
+
 .header-button:hover {
   background: transparent;
 }
 
 .header .line-division {
-  height: 5px;
+  height: 4px;
   background: #f5b14c;
   width: 5%;
+  margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 80px;
 }
@@ -162,7 +193,7 @@ h5 {
   font-family: LuloCleanOneBold;
   padding-top: 10px;
   padding-bottom: 5px;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .roadmap-row {
@@ -176,11 +207,12 @@ h5 {
 
 .roadmap-row .column img {
   display: table;
+  height: 300px;
 }
 
 .roadmap-row .column button {
   cursor: pointer;
-  margin-top: 90px;
+  margin-top: 70px;
   text-transform: uppercase;
   color: #ffffff;
   border-color: #ffffff;
@@ -213,7 +245,7 @@ h5 {
 .event.section .video img {
   z-index: 0;
   position: relative;
-  height: 400px;
+  height: 380px;
 }
 
 .event.section .text {
@@ -230,7 +262,7 @@ h5 {
   font-family: LuloCleanOneBold;
   padding-top: 10px;
   padding-bottom: 5px;
-  font-size: 35px;
+  font-size: 30px;
   text-align: right;
   margin-right: 0;
   margin-bottom: 5px;
@@ -239,9 +271,9 @@ h5 {
 .event.section .text p {
   float: right;
   text-align: right;
-  font-size: 25px;
+  font-size: 22px;
   font-family: TitilliumWeb-Bold;
-  line-height: 30px;
+  line-height: 27px;
 }
 
 .event.section .text button {
@@ -256,7 +288,7 @@ h5 {
   font-family: LuloCleanOneBold;
   font-weight: bold;
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 11px;
   background: #ffffff;
   color: black;
   padding: 10px 50px 10px 50px;
@@ -267,7 +299,7 @@ h5 {
 }
 
 .event.section .text .line-division {
-  height: 8px;
+  height: 5px;
   background: #f5b14c;
   width: 20%;
   float: right;
@@ -275,8 +307,8 @@ h5 {
 
 .images.section {
   background-color: #4dbc9c;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .images .row {
@@ -291,20 +323,21 @@ h5 {
 }
 
 .images img {
-  height: 300px;
+  height: 350px;
 }
 
 .video-title {
   background-color: #0595739c;
   position: absolute;
-  bottom: 550px;
+  bottom: 560px;
+  width: 380px;
 }
 
 .video-title h2 {
   color: #ffffff;
   text-transform: UPPERCASE;
   font-family: LuloCleanOneBold;
-  padding: 0px 100px 0px 100px;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -329,6 +362,8 @@ h5 {
   .logo-container img {
     position: relative;
     margin-bottom: 30px;
+    left: -40px;
+    top: 20px;
   }
 
   .navbar {
@@ -339,25 +374,36 @@ h5 {
     padding: 0px 10px 0px 10px;
   }
 
+  .section-links img {
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+
   .section-links {
     padding-bottom: 5px;
     padding-right: 5px;
   }
 
   .header .logo {
-    height: 170px;
+    height: 150px;
   }
 
   .header-button {
-    margin-top: 50px;
+    margin-top: 40px;
+    font-size: 10px;
   }
 
   .title.first-part {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .title.second-part {
-    font-size: 40px;
+    font-size: 35px;
+  }
+
+  .second-title {
+    width: 100%;
   }
 
   .roadmap-row {
@@ -376,6 +422,7 @@ h5 {
 
   .roadmap-row .column img {
     margin: 0 auto;
+    height: 200px;
   }
 
   .event.section {
@@ -413,6 +460,7 @@ h5 {
 
   .event.section .text p {
     text-align: center;
+    font-size: 17px;
   }
 
   .event.section .text button {
@@ -435,7 +483,7 @@ h5 {
   }
 }
 
-@media only screen and (max-width: 1494px) {
+@media only screen and (max-width: 1274px) {
 
   .roadmap-row {
     display: block;
@@ -490,6 +538,8 @@ h5 {
 
   .event.section .text p {
     text-align: center;
+    z-index: 5;
+    position: relative;
   }
 
   .event.section .text button {
